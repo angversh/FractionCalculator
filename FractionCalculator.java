@@ -7,7 +7,7 @@ public class FractionCalculator {
             Fraction input1 = getFraction();
             Fraction input2 = getFraction();
             String operation = getOperation(); //enter operation
-            Fraction output = new Fraction(1,1); //declare a variable
+            Fraction output = new Fraction(1,1); //declare variable
 
 
             if (operation.equals("-")) {
@@ -39,7 +39,7 @@ public class FractionCalculator {
             operation = input.nextLine();
         }
         if (operation.equalsIgnoreCase("q")) {
-            System.exit(0); //exit
+            System.exit(0); //exit through q or Q
         }
         return operation;
     }
