@@ -19,6 +19,7 @@ public class FractionCalculator {
             } else {
                 output = input1.add(input2);
             }
+
             output.toLowestTerms(); //lower fraction
             if(output.getDenom() == 1){
                 int outInt = output.getNumer();
@@ -70,13 +71,13 @@ public class FractionCalculator {
         String inputData = input.nextLine();
 
         while(!validFraction(inputData)){
-            System.out.print("Invalid fraction - b is not zero: ");
+            System.out.print("Invalid fraction(-s)");
             inputData = input.nextLine();
         }
 
         if(inputData.contains("/")){
-            String[] inputPart = inputData.split("/");
-            int numInput = Integer.parseInt(inputPart[0]); //convert 2 integer
+            String[] inputPart = inputData.split("/"); //convert to integer
+            int numInput = Integer.parseInt(inputPart[0]);
             int denInput = Integer.parseInt(inputPart[1]);
             return new Fraction(numInput, denInput);
         } else{
