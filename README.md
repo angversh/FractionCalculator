@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
 <h1 align="center">FractionCalculator</h1>
 <p align="center"><img src="https://media3.giphy.com/media/3o6MbseSY3SjTcjIyc/giphy.gif?cid=ecf05e472ut95g5vewhy6reolh84kawz2wfrrcod95a1uyuu&rid=giphy.gif&ct=g" width="320" height="250"/></p>
 <h1 align="center">Input Examples</h1>
@@ -23,4 +28,5 @@
 5/5 4 (one fraction at a time) —> Invalid Fraction
 
 2/5 and 0 (division by zero) —> throws IllegalArgumentException 4 denominator
-
+</body>
+</html>
